@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 2rem;
+            max-width: 992px;
+            width: 100%;
+            margin: 0 auto;
+            border: 2px solid red;
+        }
+
+        img {
+            width: 400px;
+            border: 1px solid blue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .images-section {
+            display: flex;
+            justify-content: center;
+            align-items:flex-start;
+        }
+        .blog-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            width: 100px;
+            background-color: violet;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <article>
+        <div class="container">
+            <div class="images-section"><img src="./images/foodimage1.webp" alt=""></div>
+            <div class="blog-section">
+                <h2>Post Title Will be Her</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio accusamus porro deleniti placeat minus! Dolorem magnam accusantium possimus. Magnam quo perspiciatis reiciendis eius sint nihil, ullam molestias eos ab dolorum tempore sed beatae sunt deleniti ipsam! Aliquid suscipit accusantium id itaque repellendus nemo cum molestiae beatae qui earum! Nulla, quasi.</p>
+                <button>Read more..</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="images-section"><img src="./images/foodimage1.webp" alt=""></div>
+            <div class="blog-section">
+                <h2>Post Title Will be Her</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio accusamus porro deleniti placeat minus! Dolorem magnam accusantium possimus. Magnam quo perspiciatis reiciendis eius sint nihil, ullam molestias eos ab dolorum tempore sed beatae sunt deleniti ipsam! Aliquid suscipit accusantium id itaque repellendus nemo cum molestiae beatae qui earum! Nulla, quasi.</p>
+                <button>Read more..</button>
+            </div>
+        </div>
+    </article>
+
+</body>
+</html>
