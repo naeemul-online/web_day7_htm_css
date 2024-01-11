@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-size: 3rem;
+        color: white;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 100vh;
+        gap: 10px;
+
+    }
+
+    .container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item1 {
+        background-color: #f32068;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+    }
+
+    .item2 {
+        background-color: #ff9b33;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+    }
+
+    .item3 {
+        background-color: #b13ab8;
+
+    }
+
+    .item4 {
+        background-color: #556c7a;
+
+    }
+
+    @media screen and (max-width: 576px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container .item1 {
+            flex-grow: 3;
+            
+        }
+        .container .item2 {
+            flex-grow: 3;
+
+        }
+        .container .item3 {
+            flex-grow: 2;
+
+        }
+        .container .item4 {
+            flex-grow: 1;
+
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+</body>
+
+</html>

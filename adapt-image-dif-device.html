@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt images for different devices</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: grey;
+        height: 100vh;
+        border: 5px solid red;
+    }
+    img {
+        
+
+    }
+    
+    /*  */
+
+    @media screen and (max-width: 768px) {
+        img {
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        img {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <!-- .container>img[src=./images/image-alone-boy] -->
+        <img src="./images/image-alone-boy.jpg" width="100%" height="100%">
+
+</body>
+
+</html>
