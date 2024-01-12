@@ -10,16 +10,19 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body {
-            font-size: 2rem;
-            max-width: 992px;
-            width: 100%;
+        
+        .article {
+            background-color: bisque;
             margin: 0 auto;
+            padding: 20px;
+            font-size: 2rem;
+            width: 100%;
             border: 2px solid red;
         }
 
         img {
             width: 400px;
+            height: 100%;
             border: 1px solid blue;
         }
 
@@ -27,12 +30,14 @@
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            margin: 20px 0;
         }
 
         .images-section {
+            padding: 20px;
             display: flex;
             justify-content: center;
-            align-items:flex-start;
+            align-items:center;
         }
         .blog-section {
             display: flex;
@@ -48,10 +53,26 @@
             padding: 10px;
         }
         
+        /* For Small Devices */
+        @media screen and (max-width: 576px){
+            .container {
+            flex-direction: column;
+        }
+            
+        }
+        
     </style>
 </head>
 <body>
-    <article>
+    <article class="article">
+        <div class="container">
+            <div class="images-section"><img src="./images/foodimage1.webp" alt=""></div>
+            <div class="blog-section">
+                <h2>Post Title Will be Her</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio accusamus porro deleniti placeat minus! Dolorem magnam accusantium possimus. Magnam quo perspiciatis reiciendis eius sint nihil, ullam molestias eos ab dolorum tempore sed beatae sunt deleniti ipsam! Aliquid suscipit accusantium id itaque repellendus nemo cum molestiae beatae qui earum! Nulla, quasi.</p>
+                <button>Read more..</button>
+            </div>
+        </div>
         <div class="container">
             <div class="images-section"><img src="./images/foodimage1.webp" alt=""></div>
             <div class="blog-section">
